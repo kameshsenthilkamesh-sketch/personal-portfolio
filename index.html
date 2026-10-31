@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio showcasing skills, projects and contact information.">
+  <title>Your Name | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home">YN<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact" class="nav-cta">Contact me <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR OPPORTUNITIES</p>
+        <h1>Hi, I'm <span class="gradient-text">Your Name.</span><br>Building for the web.</h1>
+        <p class="hero-description">I'm a student and aspiring web developer who enjoys turning ideas into clean, useful and engaging digital experiences.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore my work <span>↘</span></a>
+          <a class="button secondary" href="#contact">Let's talk</a>
+        </div>
+        <div class="social-line"><span>BASED IN INDIA</span><span class="line"></span><span>OPEN TO LEARN & COLLABORATE</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative profile card">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="profile-card">
+          <div class="card-top"><span class="mini-dot"></span><span class="mini-dot"></span><span class="mini-dot"></span><span class="card-label">INTRO / 2026</span></div>
+          <div class="avatar">YN</div>
+          <p class="card-name">Your Name</p><p class="card-role">STUDENT · DEVELOPER</p>
+          <div class="card-bottom"><span>CREATIVE THINKER</span><span>✳</span></div>
+        </div>
+        <span class="floating-tag tag-one">HTML · CSS</span><span class="floating-tag tag-two">JavaScript ✦</span>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading"><p class="eyebrow">01 / ABOUT</p><h2>A little about <span class="gradient-text">me.</span></h2></div>
+      <div class="about-grid">
+        <p class="about-lead">Curious by nature. Creative by choice. Always learning.</p>
+        <div class="about-text"><p>I am a student interested in web development and technology. I like learning how websites work, experimenting with new ideas and building projects that solve everyday problems.</p><p>My goal is to keep improving my skills through practice, collaboration and hands-on projects.</p></div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">02 / WHAT I USE</p><h2>My toolkit<span class="gradient-text">.</span></h2></div>
+        <div class="skills-grid">
+          <article class="skill-card"><span class="skill-icon">⌘</span><h3>HTML5</h3><p>Building well-structured web pages.</p></article>
+          <article class="skill-card"><span class="skill-icon">✳</span><h3>CSS3</h3><p>Creating responsive and attractive layouts.</p></article>
+          <article class="skill-card"><span class="skill-icon">JS</span><h3>JavaScript</h3><p>Adding interaction and useful features.</p></article>
+          <article class="skill-card"><span class="skill-icon">⌁</span><h3>Git & GitHub</h3><p>Tracking changes and sharing projects.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading"><p class="eyebrow">03 / SELECTED WORK</p><h2>Things I've <span class="gradient-text">built.</span></h2></div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-visual visual-one"><span class="visual-window"><i></i><i></i><i></i><b>YOUR NEXT IDEA</b><small>Design · Build · Launch</small></span></div>
+          <div class="project-info"><div><p class="project-type">PERSONAL WEBSITE</p><h3>Portfolio Website</h3></div><span class="project-number">01</span></div>
+          <p class="project-description">A responsive space to introduce myself, share my skills and showcase my work.</p>
+          <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-two"><div class="todo-preview"><span>✦ TODAY'S FOCUS</span><b>Make it happen.</b><small>✓ Plan your day<br>✓ Learn something new<br>○ Build a project</small></div></div>
+          <div class="project-info"><div><p class="project-type">PRODUCTIVITY APP</p><h3>To-Do List App</h3></div><span class="project-number">02</span></div>
+          <p class="project-description">A simple task manager concept for organizing everyday activities.</p>
+          <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-content">
+        <p class="eyebrow">04 / GET IN TOUCH</p><h2>Have an idea?<br><span class="gradient-text">Let's build it.</span></h2>
+        <p>I'm always happy to connect, learn and collaborate.</p>
+        <a class="button primary" href="mailto:your.email@example.com">your.email@example.com <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container"><a class="logo" href="#home">YN<span>.</span></a><p>Designed & built with care · <span id="year"></span></p><a href="#home">BACK TO TOP ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
